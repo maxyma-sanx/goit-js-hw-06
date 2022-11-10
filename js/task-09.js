@@ -10,7 +10,7 @@ function getRandomHexColor() {
 
 function onChangeColorButtonClick() {
   refs.body.style.backgroundColor = getRandomHexColor();
-  refs.span.textContent = getRandomHexColor();
+  refs.span.textContent = refs.body.style.backgroundColor;
 }
 
 refs.button.addEventListener("click", onChangeColorButtonClick);
